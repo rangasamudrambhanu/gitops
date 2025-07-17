@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movieflix-deployment
+  namespace: movieflix
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movieflix
+  template:
+    metadata:
+      labels:
+        app: movieflix
+    spec:
+      containers:
+      - name: movieflix
+        image: bhanureddy/abctest:latest
+        ports:
+        - containerPort: 5000
