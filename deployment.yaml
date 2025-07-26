@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: movieflix
-        image: bhanureddy/abctest:24
+        image: bhanureddy/abctest:25
         ports:
         - containerPort: 5000
