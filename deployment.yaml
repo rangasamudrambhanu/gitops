@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: movieflix
-        image: bhanureddy/abctest:${BUILD_NUMBER}
+        image: bhanureddy/abctest:24
         ports:
         - containerPort: 5000
